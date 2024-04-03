@@ -1,0 +1,91 @@
+Index: ../java_practice/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../java_practice/.idea/vcs.xml b/../java_practice/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/../java_practice/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../java_practice/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../java_practice/.idea/.gitignore b/../java_practice/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/../java_practice/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: ../java_practice/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../java_practice/.idea/misc.xml b/../java_practice/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/../java_practice/.idea/misc.xml	
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="corretto-21" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="jpab" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../java_practice/.idea/jpa-buddy.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../java_practice/.idea/jpa-buddy.xml b/../java_practice/.idea/jpa-buddy.xml
+new file mode 100644
+--- /dev/null	
++++ b/../java_practice/.idea/jpa-buddy.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JpaBuddyIdeaProjectConfig">
++    <option name="renamerInitialized" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../java_practice/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../java_practice/.idea/modules.xml b/../java_practice/.idea/modules.xml
+new file mode 100644
+--- /dev/null	
++++ b/../java_practice/.idea/modules.xml	
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/java_practice.iml" filepath="$PROJECT_DIR$/.idea/java_practice.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
