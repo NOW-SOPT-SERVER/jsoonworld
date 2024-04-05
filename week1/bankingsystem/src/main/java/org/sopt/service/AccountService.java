@@ -9,25 +9,28 @@ public class AccountService {
     private List<Account> accounts = new ArrayList<>();
 
     public AccountService() {
-        // 초기 계좌 데이터 생성 (실제 애플리케이션에서는 사용자 입력을 통해 계좌를 추가합니다)
         accounts.add(new Account("123-456-789", 1000.0));
         accounts.add(new Account("987-654-321", 2000.0));
     }
 
-    public void deposit(String accountNumber, Double amount) {
+    // 입금 후 잔액 반환
+    public double deposit(String accountNumber, Double amount) {
         Account account = findAccountByNumber(accountNumber);
         if (account != null) {
             account.setBalance(account.getBalance() + amount);
+            return account.getBalance(); // 변경된 잔액 반환
         }
+        return -1; // 계좌를 찾지 못한 경우
     }
 
-    public boolean withdraw(String accountNumber, Double amount) {
+    // 출금 후 잔액 반환, 출금이 불가능한 경우 -1 반환
+    public double withdraw(String accountNumber, Double amount) {
         Account account = findAccountByNumber(accountNumber);
         if (account != null && account.getBalance() >= amount) {
             account.setBalance(account.getBalance() - amount);
-            return true;
+            return account.getBalance(); // 변경된 잔액 반환
         }
-        return false;
+        return -1; // 잔액 부족 또는 계좌를 찾지 못한 경우
     }
 
     public boolean transfer(String fromAccountNumber, String toAccountNumber, Double amount) {
