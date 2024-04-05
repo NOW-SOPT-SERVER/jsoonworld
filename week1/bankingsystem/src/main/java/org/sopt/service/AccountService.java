@@ -9,9 +9,10 @@ public class AccountService {
     private List<Account> accounts = new ArrayList<>();
 
     public AccountService() {
-        accounts.add(new Account("123-456-789", 1000.0));
-        accounts.add(new Account("987-654-321", 2000.0));
+        accounts.add(new Account("123-456-789", 0.0)); // 초기 잔액을 0으로 설정
+        accounts.add(new Account("987-654-321", 0.0)); // 초기 잔액을 0으로 설정
     }
+
 
     // 입금 후 잔액 반환
     public double deposit(String accountNumber, Double amount) {
