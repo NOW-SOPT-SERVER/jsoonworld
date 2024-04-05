@@ -46,7 +46,7 @@ public class BankController {
     private void processDeposit() {
         try {
             userOutputView.displayMessage("입금할 계좌의 번호를 입력해주세요:");
-            String depositAccountNumber = userInputView.getAccountNumber(); 
+            String depositAccountNumber = userInputView.getAccountNumber();
             double depositAmount = userInputView.getAmount();
             double newBalance = accountService.deposit(depositAccountNumber, depositAmount);
             userOutputView.displaySuccessMessage("입금", depositAmount);

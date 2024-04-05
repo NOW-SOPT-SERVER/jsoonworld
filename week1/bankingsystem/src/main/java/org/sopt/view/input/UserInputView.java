@@ -1,6 +1,7 @@
 package org.sopt.view.input;
 
 import java.util.HashSet;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -24,21 +25,37 @@ public class UserInputView {
         System.out.println("4. 잔액 조회");
         System.out.println("0. 종료하기");
         System.out.print("선택: ");
-        return scanner.nextInt();
+        try {
+            return scanner.nextInt();
+        } catch (InputMismatchException e) {
+            scanner.next(); // 현재 입력 스트림에 남아있는 잘못된 문자 제거
+            System.out.println("[ERROR] 숫자를 입력해주세요.");
+            return getUserOption(); // 재귀 호출로 다시 선택 받음
+        }
     }
 
     public double getAmount() {
         System.out.print("금액을 입력해주세요: ");
-        return scanner.nextDouble();
+        try {
+            return scanner.nextDouble();
+        } catch (InputMismatchException e) {
+            scanner.next(); // 잘못된 입력 제거
+            System.out.println("[ERROR] 숫자를 입력해주세요.");
+            return getAmount(); // 재귀 호출로 다시 금액을 입력받음
+        }
     }
 
     public String getAccountNumber() {
-        System.out.print("계좌 번호를 입력해주세요: ");
-        String accountNumber = scanner.next();
-        // 유효한 계좌 번호인지 확인
-        if (!validAccountNumbers.contains(accountNumber)) {
-            throw new IllegalArgumentException("[ERROR] 유효하지 않은 계좌 번호입니다.");
+        while (true) {
+            System.out.println("사용할 수 있는 계좌:");
+            validAccountNumbers.forEach(System.out::println);
+            System.out.print("계좌 번호를 입력해주세요: ");
+            String accountNumber = scanner.next();
+            if (validAccountNumbers.contains(accountNumber)) {
+                return accountNumber;
+            } else {
+                System.out.println("[ERROR] 유효하지 않은 계좌 번호입니다. 다시 입력해주세요.");
+            }
         }
-        return accountNumber;
     }
 }
