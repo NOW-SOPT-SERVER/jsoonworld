@@ -19,4 +19,8 @@ public enum ErrorMessage {
     public String toString() {
         return message;
     }
+
+    public String getMessage() {
+        return message;
+    }
 }
