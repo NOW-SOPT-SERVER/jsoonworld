@@ -77,16 +77,27 @@ public class BankController {
 
     private void processTransfer() {
         userOutputView.displayMessage("이체할 계좌의 번호를 입력해주세요:");
+        userOutputView.displayMessage("사용할 수 있는 계좌:");
+        userOutputView.displayMessage("123-456-789\n987-654-321");
         String fromAccountNumber = userInputView.getAccountNumber();
         userOutputView.displayMessage("이체 받을 계좌의 번호를 입력해주세요:");
+        userOutputView.displayMessage("사용할 수 있는 계좌:");
+        userOutputView.displayMessage("123-456-789\n987-654-321");
         String toAccountNumber = userInputView.getAccountNumber();
         double transferAmount = userInputView.getAmount();
         if (accountService.transfer(fromAccountNumber, toAccountNumber, transferAmount)) {
             userOutputView.displaySuccessMessage("이체", transferAmount);
+            // 이체한 계좌의 새로운 잔액 표시
+            double fromAccountBalance = accountService.checkBalance(fromAccountNumber);
+            userOutputView.displayMessage(String.format("이체한 계좌(%s)의 현재 잔액: %.2f원", fromAccountNumber, fromAccountBalance));
+            // 이체 받은 계좌의 새로운 잔액 표시
+            double toAccountBalance = accountService.checkBalance(toAccountNumber);
+            userOutputView.displayMessage(String.format("이체 받은 계좌(%s)의 현재 잔액: %.2f원", toAccountNumber, toAccountBalance));
         } else {
             userOutputView.displayErrorMessage("이체 실패: 잔액 부족 또는 계좌 오류");
         }
     }
+
 
     private void processCheckBalance() {
         userOutputView.displayMessage("조회할 계좌의 번호를 입력해주세요:");
