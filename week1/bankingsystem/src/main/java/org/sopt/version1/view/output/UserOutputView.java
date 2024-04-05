@@ -1,4 +1,4 @@
-package org.sopt.view.output;
+package org.sopt.version1.view.output;
 
 public class UserOutputView {
 

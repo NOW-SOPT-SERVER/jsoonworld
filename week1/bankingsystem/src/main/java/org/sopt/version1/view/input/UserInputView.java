@@ -1,4 +1,4 @@
-package org.sopt.view.input;
+package org.sopt.version1.view.input;
 
 import java.util.Scanner;
 import java.util.Set;

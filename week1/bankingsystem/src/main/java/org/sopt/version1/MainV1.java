@@ -1,11 +1,11 @@
-package org.sopt;
+package org.sopt.version1;
 
-import org.sopt.controller.BankController;
-import org.sopt.service.AccountService;
-import org.sopt.view.input.UserInputView;
-import org.sopt.view.output.UserOutputView;
+import org.sopt.version1.controller.BankController;
+import org.sopt.version1.service.AccountService;
+import org.sopt.version1.view.input.UserInputView;
+import org.sopt.version1.view.output.UserOutputView;
 
-public class Main {
+public class MainV1 {
 
     public static void main(String[] args) {
         AccountService accountService = new AccountService();

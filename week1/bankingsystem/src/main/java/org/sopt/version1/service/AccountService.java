@@ -1,6 +1,6 @@
-package org.sopt.service;
+package org.sopt.version1.service;
 
-import org.sopt.domain.Account;
+import org.sopt.version1.domain.Account;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.sopt.domain;
+package org.sopt.version1.domain;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,8 @@
-package org.sopt.controller;
+package org.sopt.version1.controller;
 
-import org.sopt.service.AccountService;
-import org.sopt.view.input.UserInputView;
-import org.sopt.view.output.UserOutputView;
+import org.sopt.version1.service.AccountService;
+import org.sopt.version1.view.input.UserInputView;
+import org.sopt.version1.view.output.UserOutputView;
 
 public class BankController {
     private AccountService accountService = new AccountService();
