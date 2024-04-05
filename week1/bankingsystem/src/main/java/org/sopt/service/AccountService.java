@@ -24,4 +24,8 @@ public class AccountService {
         }
         return false;
     }
+
+    public double checkBalance(Account account) {
+        return account.getBalance();
+    }
 }
