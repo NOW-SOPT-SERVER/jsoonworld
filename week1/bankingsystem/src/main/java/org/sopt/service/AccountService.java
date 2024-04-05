@@ -2,30 +2,55 @@ package org.sopt.service;
 
 import org.sopt.domain.Account;
 
-public class AccountService {
+import java.util.ArrayList;
+import java.util.List;
 
-    public void deposit(Account account, Double amount) {
-        Double newBalance = account.getBalance() + amount;
-        account.setBalance(newBalance);
+public class AccountService {
+    private List<Account> accounts = new ArrayList<>();
+
+    public AccountService() {
+        // 초기 계좌 데이터 생성 (실제 애플리케이션에서는 사용자 입력을 통해 계좌를 추가합니다)
+        accounts.add(new Account("123-456-789", 1000.0));
+        accounts.add(new Account("987-654-321", 2000.0));
     }
 
-    public boolean withdraw(Account account, Double amount) {
-        if (amount <= account.getBalance()) {
+    public void deposit(String accountNumber, Double amount) {
+        Account account = findAccountByNumber(accountNumber);
+        if (account != null) {
+            account.setBalance(account.getBalance() + amount);
+        }
+    }
+
+    public boolean withdraw(String accountNumber, Double amount) {
+        Account account = findAccountByNumber(accountNumber);
+        if (account != null && account.getBalance() >= amount) {
             account.setBalance(account.getBalance() - amount);
             return true;
         }
         return false;
     }
 
-    public boolean transfer(Account fromAccount, Account toAccount, Double amount) {
-        if (withdraw(fromAccount, amount)) {
-            deposit(toAccount, amount);
+    public boolean transfer(String fromAccountNumber, String toAccountNumber, Double amount) {
+        Account fromAccount = findAccountByNumber(fromAccountNumber);
+        Account toAccount = findAccountByNumber(toAccountNumber);
+
+        if (fromAccount != null && toAccount != null && fromAccount.getBalance() >= amount) {
+            fromAccount.setBalance(fromAccount.getBalance() - amount);
+            toAccount.setBalance(toAccount.getBalance() + amount);
             return true;
         }
         return false;
     }
 
-    public double checkBalance(Account account) {
-        return account.getBalance();
+    public double checkBalance(String accountNumber) {
+        Account account = findAccountByNumber(accountNumber);
+        return account != null ? account.getBalance() : 0;
+    }
+
+    private Account findAccountByNumber(String accountNumber) {
+        return accounts.stream()
+                .filter(account -> account.getAccountNumber().equals(accountNumber))
+                .findFirst()
+                .orElse(null);
     }
 }
