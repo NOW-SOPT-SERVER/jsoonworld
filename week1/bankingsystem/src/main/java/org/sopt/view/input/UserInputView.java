@@ -1,16 +1,22 @@
 package org.sopt.view.input;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class UserInputView {
     private Scanner scanner;
+    private Set<String> validAccountNumbers;
 
     public UserInputView() {
         this.scanner = new Scanner(System.in);
+        validAccountNumbers = new HashSet<>();
+        validAccountNumbers.add("123-456-789");
+        validAccountNumbers.add("987-654-321");
     }
 
     public int getUserOption() {
-        System.out.println("환영합니다. SOPT 은행에 접속하셨습니다.");
+        System.out.println("환영합니다. SOPT 은행입니다.");
         System.out.println("원하시는 서비스를 선택해주세요.");
         System.out.println("1. 입금하기");
         System.out.println("2. 출금하기");
@@ -28,6 +34,11 @@ public class UserInputView {
 
     public String getAccountNumber() {
         System.out.print("계좌 번호를 입력해주세요: ");
-        return scanner.next();
+        String accountNumber = scanner.next();
+        // 유효한 계좌 번호인지 확인
+        if (!validAccountNumbers.contains(accountNumber)) {
+            throw new IllegalArgumentException("[ERROR] 유효하지 않은 계좌 번호입니다.");
+        }
+        return accountNumber;
     }
 }

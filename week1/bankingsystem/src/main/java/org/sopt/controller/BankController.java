@@ -46,18 +46,14 @@ public class BankController {
     private void processDeposit() {
         try {
             userOutputView.displayMessage("입금할 계좌의 번호를 입력해주세요:");
-            String depositAccountNumber = userInputView.getAccountNumber();
+            String depositAccountNumber = userInputView.getAccountNumber(); 
             double depositAmount = userInputView.getAmount();
             double newBalance = accountService.deposit(depositAccountNumber, depositAmount);
-            if (newBalance != -1) {
-                userOutputView.displaySuccessMessage("입금", depositAmount);
-                userOutputView.displayBalance(newBalance); // 잔액 표시
-            } else {
-                userOutputView.displayErrorMessage("계좌를 찾을 수 없습니다.");
-            }
+            userOutputView.displaySuccessMessage("입금", depositAmount);
+            userOutputView.displayBalance(newBalance);
         } catch (IllegalArgumentException e) {
             userOutputView.displayErrorMessage(e.getMessage());
-            processDeposit(); // 재귀 호출로 다시 시도
+            processDeposit();
         }
     }
 
