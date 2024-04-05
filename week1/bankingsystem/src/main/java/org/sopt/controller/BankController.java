@@ -30,10 +30,7 @@ public class BankController {
                     processTransfer();
                     break;
                 case 4: // 잔액 조회
-                    userOutputView.displayMessage("조회할 계좌의 번호를 입력해주세요:");
-                    String balanceAccountNumber = userInputView.getAccountNumber();
-                    double balance = accountService.checkBalance(balanceAccountNumber);
-                    userOutputView.displayBalance(balance);
+                    processCheckBalance();
                     break;
                 case 0: // 종료
                     running = false;
@@ -84,4 +81,12 @@ public class BankController {
             userOutputView.displayErrorMessage("이체 실패: 잔액 부족 또는 계좌 오류");
         }
     }
+
+    private void processCheckBalance() {
+        userOutputView.displayMessage("조회할 계좌의 번호를 입력해주세요:");
+        String balanceAccountNumber = userInputView.getAccountNumber();
+        double balance = accountService.checkBalance(balanceAccountNumber);
+        userOutputView.displayBalance(balance);
+    }
+
 }
