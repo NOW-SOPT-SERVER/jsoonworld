@@ -27,16 +27,7 @@ public class BankController {
                     processWithdraw();
                     break;
                 case 3: // 계좌 이체
-                    userOutputView.displayMessage("이체할 계좌의 번호를 입력해주세요:");
-                    String fromAccountNumber = userInputView.getAccountNumber();
-                    userOutputView.displayMessage("이체 받을 계좌의 번호를 입력해주세요:");
-                    String toAccountNumber = userInputView.getAccountNumber();
-                    double transferAmount = userInputView.getAmount();
-                    if (accountService.transfer(fromAccountNumber, toAccountNumber, transferAmount)) {
-                        userOutputView.displaySuccessMessage("이체", transferAmount);
-                    } else {
-                        userOutputView.displayErrorMessage("이체 실패: 잔액 부족 또는 계좌 오류");
-                    }
+                    processTransfer();
                     break;
                 case 4: // 잔액 조회
                     userOutputView.displayMessage("조회할 계좌의 번호를 입력해주세요:");
@@ -78,6 +69,19 @@ public class BankController {
             userOutputView.displayBalance(newBalance); // 변경된 잔액 표시
         } else {
             userOutputView.displayErrorMessage("잔액 부족 또는 계좌 오류");
+        }
+    }
+
+    private void processTransfer() {
+        userOutputView.displayMessage("이체할 계좌의 번호를 입력해주세요:");
+        String fromAccountNumber = userInputView.getAccountNumber();
+        userOutputView.displayMessage("이체 받을 계좌의 번호를 입력해주세요:");
+        String toAccountNumber = userInputView.getAccountNumber();
+        double transferAmount = userInputView.getAmount();
+        if (accountService.transfer(fromAccountNumber, toAccountNumber, transferAmount)) {
+            userOutputView.displaySuccessMessage("이체", transferAmount);
+        } else {
+            userOutputView.displayErrorMessage("이체 실패: 잔액 부족 또는 계좌 오류");
         }
     }
 }
