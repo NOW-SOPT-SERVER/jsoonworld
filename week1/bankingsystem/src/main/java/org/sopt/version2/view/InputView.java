@@ -1,5 +1,7 @@
 package org.sopt.version2.view;
 
+import org.sopt.version2.error.ErrorMessage;
+
 import java.util.Scanner;
 import java.util.Set;
 
