@@ -9,6 +9,12 @@ public class BankController {
     private UserInputView userInputView = new UserInputView();
     private UserOutputView userOutputView = new UserOutputView();
 
+    public BankController(AccountService accountService, UserInputView userInputView, UserOutputView userOutputView) {
+        this.accountService = accountService;
+        this.userInputView = userInputView;
+        this.userOutputView = userOutputView;
+    }
+
     public void start() {
         boolean running = true;
         while (running) {
