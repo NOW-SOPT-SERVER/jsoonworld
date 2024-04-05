@@ -16,21 +16,24 @@ public class AccountService {
     // 입금 후 잔액 반환
     public double deposit(String accountNumber, Double amount) {
         Account account = findAccountByNumber(accountNumber);
-        if (account != null) {
-            account.setBalance(account.getBalance() + amount);
-            return account.getBalance(); // 변경된 잔액 반환
+        if (account == null) {
+            throw new IllegalArgumentException("[ERROR] 계좌를 찾을 수 없습니다.");
         }
-        return -1; // 계좌를 찾지 못한 경우
+        account.setBalance(account.getBalance() + amount);
+        return account.getBalance();
     }
 
-    // 출금 후 잔액 반환, 출금이 불가능한 경우 -1 반환
+    // 출금 후 잔액 반환
     public double withdraw(String accountNumber, Double amount) {
         Account account = findAccountByNumber(accountNumber);
-        if (account != null && account.getBalance() >= amount) {
-            account.setBalance(account.getBalance() - amount);
-            return account.getBalance(); // 변경된 잔액 반환
+        if (account == null) {
+            throw new IllegalArgumentException("[ERROR] 계좌를 찾을 수 없습니다.");
         }
-        return -1; // 잔액 부족 또는 계좌를 찾지 못한 경우
+        if (account.getBalance() < amount) {
+            throw new IllegalStateException("[ERROR] 잔액 부족");
+        }
+        account.setBalance(account.getBalance() - amount);
+        return account.getBalance();
     }
 
     public boolean transfer(String fromAccountNumber, String toAccountNumber, Double amount) {

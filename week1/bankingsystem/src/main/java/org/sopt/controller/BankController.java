@@ -44,28 +44,38 @@ public class BankController {
     }
 
     private void processDeposit() {
-        userOutputView.displayMessage("입금할 계좌의 번호를 입력해주세요:");
-        String depositAccountNumber = userInputView.getAccountNumber();
-        double depositAmount = userInputView.getAmount();
-        double newBalance = accountService.deposit(depositAccountNumber, depositAmount);
-        if (newBalance != -1) {
-            userOutputView.displaySuccessMessage("입금", depositAmount);
-            userOutputView.displayBalance(newBalance); // 잔액 표시
-        } else {
-            userOutputView.displayErrorMessage("계좌를 찾을 수 없습니다.");
+        try {
+            userOutputView.displayMessage("입금할 계좌의 번호를 입력해주세요:");
+            String depositAccountNumber = userInputView.getAccountNumber();
+            double depositAmount = userInputView.getAmount();
+            double newBalance = accountService.deposit(depositAccountNumber, depositAmount);
+            if (newBalance != -1) {
+                userOutputView.displaySuccessMessage("입금", depositAmount);
+                userOutputView.displayBalance(newBalance); // 잔액 표시
+            } else {
+                userOutputView.displayErrorMessage("계좌를 찾을 수 없습니다.");
+            }
+        } catch (IllegalArgumentException e) {
+            userOutputView.displayErrorMessage(e.getMessage());
+            processDeposit(); // 재귀 호출로 다시 시도
         }
     }
 
     private void processWithdraw() {
-        userOutputView.displayMessage("출금할 계좌의 번호를 입력해주세요:");
-        String withdrawAccountNumber = userInputView.getAccountNumber();
-        double withdrawAmount = userInputView.getAmount();
-        double newBalance = accountService.withdraw(withdrawAccountNumber, withdrawAmount);
-        if (newBalance != -1) {
-            userOutputView.displaySuccessMessage("출금", withdrawAmount);
-            userOutputView.displayBalance(newBalance); // 변경된 잔액 표시
-        } else {
-            userOutputView.displayErrorMessage("잔액 부족 또는 계좌 오류");
+        try {
+            userOutputView.displayMessage("출금할 계좌의 번호를 입력해주세요:");
+            String withdrawAccountNumber = userInputView.getAccountNumber();
+            double withdrawAmount = userInputView.getAmount();
+            double newBalance = accountService.withdraw(withdrawAccountNumber, withdrawAmount);
+            if (newBalance != -1) {
+                userOutputView.displaySuccessMessage("출금", withdrawAmount);
+                userOutputView.displayBalance(newBalance); // 변경된 잔액 표시
+            } else {
+                userOutputView.displayErrorMessage("잔액 부족 또는 계좌 오류");
+            }
+        } catch (IllegalArgumentException | IllegalStateException e) {
+            userOutputView.displayErrorMessage(e.getMessage());
+            processWithdraw(); // 재귀 호출로 다시 시도
         }
     }
 
