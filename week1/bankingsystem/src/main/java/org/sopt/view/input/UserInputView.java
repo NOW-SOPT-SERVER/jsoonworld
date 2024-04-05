@@ -13,7 +13,6 @@ public class UserInputView {
     }
 
     public int getUserOption() {
-        System.out.println("환영합니다. SOPT 은행입니다.");
         System.out.println("원하시는 서비스를 선택해주세요.");
         System.out.println("1. 입금하기");
         System.out.println("2. 출금하기");
@@ -30,13 +29,13 @@ public class UserInputView {
     }
 
     public String getAccountNumber() {
-        displayValidAccounts(); // 사용할 수 있는 계좌를 보여주는 메서드를 호출
+        displayValidAccounts();
         System.out.print("계좌 번호를 입력해주세요: ");
         String accountNumber = scanner.next();
-        // 유효한 계좌 번호인지 확인
+
         if (!validAccountNumbers.contains(accountNumber)) {
             System.out.println("[ERROR] 유효하지 않은 계좌 번호입니다. 다시 입력해주세요.");
-            return getAccountNumber(); // 재귀 호출로 다시 입력 받음
+            return getAccountNumber();
         }
         return accountNumber;
     }

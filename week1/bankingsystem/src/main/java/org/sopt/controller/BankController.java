@@ -20,19 +20,19 @@ public class BankController {
         while (running) {
             int option = userInputView.getUserOption();
             switch (option) {
-                case 1: // 입금
+                case 1:
                     processDeposit();
                     break;
-                case 2: // 출금
+                case 2:
                     processWithdraw();
                     break;
-                case 3: // 계좌 이체
+                case 3:
                     processTransfer();
                     break;
-                case 4: // 잔액 조회
+                case 4:
                     processCheckBalance();
                     break;
-                case 0: // 종료
+                case 0:
                     running = false;
                     userOutputView.displayMessage("프로그램을 종료합니다.");
                     break;
@@ -65,7 +65,7 @@ public class BankController {
             double newBalance = accountService.withdraw(withdrawAccountNumber, withdrawAmount);
             if (newBalance != -1) {
                 userOutputView.displaySuccessMessage("출금", withdrawAmount);
-                userOutputView.displayBalance(newBalance); // 변경된 잔액 표시
+                userOutputView.displayBalance(newBalance);
             } else {
                 userOutputView.displayErrorMessage("잔액 부족 또는 계좌 오류");
             }
@@ -87,10 +87,10 @@ public class BankController {
         double transferAmount = userInputView.getAmount();
         if (accountService.transfer(fromAccountNumber, toAccountNumber, transferAmount)) {
             userOutputView.displaySuccessMessage("이체", transferAmount);
-            // 이체한 계좌의 새로운 잔액 표시
+
             double fromAccountBalance = accountService.checkBalance(fromAccountNumber);
             userOutputView.displayMessage(String.format("이체한 계좌(%s)의 현재 잔액: %.2f원", fromAccountNumber, fromAccountBalance));
-            // 이체 받은 계좌의 새로운 잔액 표시
+
             double toAccountBalance = accountService.checkBalance(toAccountNumber);
             userOutputView.displayMessage(String.format("이체 받은 계좌(%s)의 현재 잔액: %.2f원", toAccountNumber, toAccountBalance));
         } else {
