@@ -32,4 +32,12 @@ public class OutputView {
         displayErrorMessage(errorMessage);
     }
 
+    public void requestAccountNumberMessage() {
+        System.out.println("계좌의 번호를 입력해주세요:");
+    }
+
+    public void requestRecipientAccountNumberMessage() {
+        System.out.println("이체 받을 계좌의 번호를 입력해주세요:");
+    }
+
 }
