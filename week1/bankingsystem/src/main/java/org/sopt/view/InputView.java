@@ -1,19 +1,22 @@
-package org.sopt.version2.view;
+package org.sopt.view;
 
-import org.sopt.version2.error.ErrorMessage;
+import org.sopt.error.ErrorMessage;
 
 import java.util.Scanner;
 import java.util.Set;
 
 public class InputView {
+    // 입력을 받기 위한 Scanner 객체와 유효한 계좌 번호 집합
     private Scanner scanner;
     private Set<String> validAccountNumbers;
 
+    // 생성자: Scanner 초기화 및 유효한 계좌 번호 설정
     public InputView() {
         this.scanner = new Scanner(System.in);
         validAccountNumbers = Set.of("123-456-789", "987-654-321");
     }
 
+    // 사용자의 선택을 받는 메서드
     public int getUserOption() {
         while (true) {
             try {
@@ -30,11 +33,12 @@ public class InputView {
                 return scanner.nextInt();
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
-                scanner.next(); // 입력 스트림을 지웁니다.
+                scanner.next(); // 입력 스트림을 비우고 다음 입력을 받습니다.
             }
         }
     }
 
+    // 금액을 입력받는 메서드
     public int getAmount() {
         while (true) {
             try {
@@ -45,11 +49,12 @@ public class InputView {
                 return scanner.nextInt();
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
-                scanner.next();
+                scanner.next(); // 입력 스트림을 비우고 다음 입력을 받습니다.
             }
         }
     }
 
+    // 계좌 번호를 입력받는 메서드
     public String getAccountNumber() {
         while (true) {
             try {
@@ -66,6 +71,7 @@ public class InputView {
         }
     }
 
+    // 유효한 계좌 목록을 출력하는 메서드
     private void displayValidAccounts() {
         System.out.println("사용할 수 있는 계좌:");
         validAccountNumbers.forEach(System.out::println);

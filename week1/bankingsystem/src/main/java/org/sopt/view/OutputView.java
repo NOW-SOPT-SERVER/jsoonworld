@@ -1,6 +1,6 @@
-package org.sopt.version4.view;
+package org.sopt.view;
 
-import org.sopt.version4.error.ErrorMessage;
+import org.sopt.error.ErrorMessage;
 
 public class OutputView {
 

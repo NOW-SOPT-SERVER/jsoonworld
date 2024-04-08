@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="29d5af52-e020-46fe-b291-72bea64a5db0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version3/MainV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version3/MainV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version3/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version3/view/InputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version4/MainV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version4/MainV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version2/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version2/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version4/controller/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version4/controller/BankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version4/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version4/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version4/error/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version4/error/ErrorMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +94,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/sopt/version4" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MainV4">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sopt.Main" />
@@ -183,7 +189,7 @@
       <workItem from="1712155351140" duration="245000" />
       <workItem from="1712298052470" duration="13027000" />
       <workItem from="1712329672447" duration="901000" />
-      <workItem from="1712543741585" duration="7090000" />
+      <workItem from="1712543741585" duration="7849000" />
     </task>
     <servers />
   </component>

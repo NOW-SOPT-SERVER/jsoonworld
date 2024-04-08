@@ -1,8 +1,8 @@
-package org.sopt.version2;
+package org.sopt;
 
-import org.sopt.version2.controller.BankController;
+import org.sopt.controller.BankController;
 
-public class MainV2 {
+public class Main {
 
     public static void main(String[] args) {
 
