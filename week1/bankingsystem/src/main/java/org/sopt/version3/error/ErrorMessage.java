@@ -7,7 +7,9 @@ public enum ErrorMessage {
     INSUFFICIENT_BALANCE("[ERROR] 잔액이 부족합니다."),
     INVALID_OPTION("[ERROR] 유효하지 않은 선택입니다. 다시 입력해 주세요."),
     INVALID_AMOUNT("[ERROR] 유효하지 않은 금액입니다. 다시 입력해 주세요."),
-    INVALID_ACCOUNT_NUMBER("[ERROR] 유효하지 않은 계좌 번호입니다. 다시 입력해 주세요.");
+    INVALID_ACCOUNT_NUMBER("[ERROR] 유효하지 않은 계좌 번호입니다. 다시 입력해 주세요."),
+    ACCOUNT_ALREADY_EXISTS("[ERROR] 계좌 번호가 이미 존재합니다."),
+    ACCOUNT_NOT_FOUND("[ERROR] 계좌 번호가 존재하지 않습니다.");
 
     private final String message;
 
