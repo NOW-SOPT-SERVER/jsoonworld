@@ -33,7 +33,7 @@ public class OutputView {
     }
 
     public void requestAccountNumberMessage() {
-        System.out.println("계좌의 번호를 입력해주세요:");
+        System.out.println("해당 서비스를 이용할 계좌의 번호를 입력해주세요.");
     }
 
     public void requestRecipientAccountNumberMessage() {
