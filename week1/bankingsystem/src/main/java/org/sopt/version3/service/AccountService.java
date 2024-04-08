@@ -1,7 +1,7 @@
 package org.sopt.version3.service;
 
-import org.sopt.version2.domain.Account;
-import org.sopt.version2.error.ErrorMessage;
+import org.sopt.version3.domain.Account;
+import org.sopt.version3.error.ErrorMessage;
 import java.util.ArrayList;
 import java.util.List;
 
