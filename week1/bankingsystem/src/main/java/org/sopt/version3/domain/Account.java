@@ -1,7 +1,7 @@
 package org.sopt.version3.domain;
 
 import lombok.Getter;
-import org.sopt.version2.error.ErrorMessage;
+import org.sopt.version3.error.ErrorMessage;
 
 @Getter
 public class Account {
