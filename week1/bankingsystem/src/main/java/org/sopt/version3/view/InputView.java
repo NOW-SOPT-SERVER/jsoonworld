@@ -1,6 +1,6 @@
 package org.sopt.version3.view;
 
-import org.sopt.version2.error.ErrorMessage;
+import org.sopt.version3.error.ErrorMessage;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -35,6 +35,21 @@ public class InputView {
                 if (scanner.hasNext()) {
                     scanner.nextLine();
                 }
+            }
+        }
+    }
+
+    public String getRecipientAccountNumber() {
+        while (true) {
+            try {
+                System.out.println("이체 받을 계좌의 번호를 입력해주세요:");
+                String accountNumber = scanner.next();
+                if (!validAccountNumbers.contains(accountNumber)) {
+                    throw new IllegalArgumentException(ErrorMessage.INVALID_ACCOUNT_NUMBER.getMessage());
+                }
+                return accountNumber;
+            } catch (IllegalArgumentException e) {
+                displayError(e.getMessage());
             }
         }
     }
