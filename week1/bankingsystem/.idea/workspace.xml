@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d5af52-e020-46fe-b291-72bea64a5db0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bankingsystem.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bankingsystem.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version2/MainV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version2/MainV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version2/view/OutputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version2/view/OutputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version3/MainV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version3/MainV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version3/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version3/view/InputView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/version4/MainV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sopt/version4/MainV4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.MainV2.executor": "Run",
+    "Application.MainV3.executor": "Run",
+    "Application.MainV4.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.bankingsystem [:Main.main()].executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -81,7 +83,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "jayson",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/bankingsystem",
+    "last_opened_file_path": "/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/bankingsystem/src/main/java/org/sopt/version4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,7 +93,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MainV2">
+  <component name="RunManager" selected="Application.MainV4">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sopt.Main" />
       <module name="bankingsystem.main" />
@@ -118,8 +120,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sopt.version3.MainV3" />
+      <module name="bankingsystem.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sopt.version3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sopt.version4.MainV4" />
+      <module name="bankingsystem.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sopt.version4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainV4" />
+        <item itemvalue="Application.MainV3" />
         <item itemvalue="Application.MainV2" />
         <item itemvalue="Application.Main" />
       </list>
@@ -153,7 +183,7 @@
       <workItem from="1712155351140" duration="245000" />
       <workItem from="1712298052470" duration="13027000" />
       <workItem from="1712329672447" duration="901000" />
-      <workItem from="1712543741585" duration="1773000" />
+      <workItem from="1712543741585" duration="7090000" />
     </task>
     <servers />
   </component>
