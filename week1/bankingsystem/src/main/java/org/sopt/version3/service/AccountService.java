@@ -15,15 +15,16 @@ public class AccountService {
     // 계좌 추가 메소드
     public void addAccount(String accountNumber, Integer initialBalance) {
         if (accounts.containsKey(accountNumber)) {
-            throw new IllegalArgumentException("계좌 번호가 이미 존재합니다.");
+            throw new IllegalArgumentException(ErrorMessage.ACCOUNT_ALREADY_EXISTS.toString());
         }
         accounts.put(accountNumber, new Account(accountNumber, initialBalance));
     }
 
+
     // 계좌 제거 메소드 (선택적)
     public void removeAccount(String accountNumber) {
         if (!accounts.containsKey(accountNumber)) {
-            throw new IllegalArgumentException("계좌 번호가 존재하지 않습니다.");
+            throw new IllegalArgumentException(ErrorMessage.ACCOUNT_NOT_FOUND.toString());
         }
         accounts.remove(accountNumber);
     }
