@@ -1,4 +1,4 @@
-package org.sopt.ofcoursemarket.repository;
+package org.sopt.ofcoursemarket.service;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,6 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.sopt.ofcoursemarket.domain.Item;
 import org.sopt.ofcoursemarket.domain.TradeType;
 import org.sopt.ofcoursemarket.dto.ItemDTO;
+import org.sopt.ofcoursemarket.repository.ItemRepository;
 import org.sopt.ofcoursemarket.service.ItemService;
 
 import static org.mockito.ArgumentMatchers.any;
