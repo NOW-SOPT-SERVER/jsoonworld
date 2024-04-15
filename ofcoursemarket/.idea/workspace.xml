@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd077aca-712a-48cb-bc5d-ec8a56c37c9e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sopt/ofcoursemarket/repository/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sopt/ofcoursemarket/repository/ItemRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +34,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,6 +61,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.ItemRepositoryTest.executor": "Run",
+    "JUnit.ItemServiceTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -95,7 +95,7 @@
       <recent name="org.sopt.ofcoursemarket.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemRepositoryTest">
+  <component name="RunManager" selected="JUnit.ItemServiceTest">
     <configuration name="ItemRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ofcoursemarket.test" />
       <extension name="coverage">
@@ -111,6 +111,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ofcoursemarket.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sopt.ofcoursemarket.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sopt.ofcoursemarket.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.sopt.ofcoursemarket.repository.ItemServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OfcoursemarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ofcoursemarket.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sopt.ofcoursemarket.OfcoursemarketApplication" />
@@ -120,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemServiceTest" />
         <item itemvalue="JUnit.ItemRepositoryTest" />
       </list>
     </recent_temporary>
