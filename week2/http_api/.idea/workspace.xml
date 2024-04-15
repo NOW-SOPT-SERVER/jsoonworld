@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129e950c-afe5-4206-b391-e59d3b2c0d67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/practice/HttpApiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sopt/practice/HttpApiApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="129e950c-afe5-4206-b391-e59d3b2c0d67" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713159260255</updated>
-      <workItem from="1713159261360" duration="362000" />
+      <workItem from="1713159261360" duration="691000" />
     </task>
     <servers />
   </component>

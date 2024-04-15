@@ -31,9 +31,9 @@ public class MemberControllerTest extends ApiTest {
         public void createMemberSuccess() throws Exception {
             //given
             final var request = new MemberCreateDto(
-                    "도소현",
+                    "권장순",
                     Part.SERVER,
-                    24
+                    26
             );
 
             //when
