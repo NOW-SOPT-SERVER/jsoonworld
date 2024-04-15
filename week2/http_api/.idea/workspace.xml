@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64d25e05-1676-495b-b1c4-e46d18fdbad6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../week1/bankingsystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/bankingsystem/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="129e950c-afe5-4206-b391-e59d3b2c0d67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week1/spring_practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week1/spring_practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sopt/practice/HttpApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sopt/practice/HttpApiApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,36 +26,42 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2eZNcjIFZnACTUyS1bGla6vLVqL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2f7jxjaoOV8z7SkAiWvI8Cc7VWH" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Build http_api.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.HttpApiApplication.executor": "Run",
-    "git-widget-placeholder": "jayson",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week2/http_api",
     "node.js.detected.package.eslint": "true",
@@ -54,14 +69,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="HttpApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="sopt.practice.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sopt.practice.HttpApiApplication" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sopt.spring.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,14 +92,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="64d25e05-1676-495b-b1c4-e46d18fdbad6" name="Changes" comment="" />
-      <created>1712108223006</created>
+      <changelist id="129e950c-afe5-4206-b391-e59d3b2c0d67" name="Changes" comment="" />
+      <created>1713159260255</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712108223006</updated>
-      <workItem from="1712108224038" duration="944000" />
-      <workItem from="1712109242196" duration="101000" />
-      <workItem from="1712369384939" duration="18000" />
+      <updated>1713159260255</updated>
+      <workItem from="1713159261360" duration="362000" />
     </task>
     <servers />
   </component>
