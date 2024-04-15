@@ -1,12 +1,15 @@
 package org.sopt.ofcoursemarket.repository;
 
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.sopt.ofcoursemarket.domain.Item;
 import org.sopt.ofcoursemarket.domain.TradeType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
+
 
 @DataJpaTest
 class ItemRepositoryTest {
@@ -15,7 +18,8 @@ class ItemRepositoryTest {
     private ItemRepository itemRepository;
 
     @Test
-    public void whenSaveItem_thenItShouldBeFound() {
+    @DisplayName("아이템 저장 후 찾기")
+    void whenSaveItem_thenItShouldBeFound() {
         //given
         Item item = Item.builder()
                 .title("세미나 멀티탭")
@@ -27,12 +31,14 @@ class ItemRepositoryTest {
                 .build();
 
         //when
-        itemRepository.save(item);
+        Item savedItem = itemRepository.save(item);
 
         //then
-        Item foundItem = itemRepository.findById(item.getId()).orElse(null);
-        assertNotNull(foundItem);
-        assertEquals("세미나 멀티탭", foundItem.getTitle());
+        assertThat(itemRepository.findById(savedItem.getId())).isPresent()
+                .hasValueSatisfying(i -> {
+                    assertThat(i.getTitle()).isEqualTo("세미나 멀티탭");
+                    assertThat(i.getDescription()).isEqualTo("세미나 때 유용하게 쓰여요");
+                });
     }
 
 }
