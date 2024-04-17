@@ -31,8 +31,9 @@ public class Item {
     @Column(nullable = false)
     private Boolean isPriceNegotiable;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String preferredTradingLocation;
+    private TradingLocation preferredTradingLocation;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", nullable = false)
