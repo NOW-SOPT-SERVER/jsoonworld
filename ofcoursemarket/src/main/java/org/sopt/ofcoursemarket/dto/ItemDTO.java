@@ -8,5 +8,6 @@ public record ItemDTO(
         Integer price,
         TradeType tradeType,
         Boolean isPriceNegotiable,
-        String preferredTradingLocation
+        String preferredTradingLocation,
+        Long sellerId
 ) {}
