@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -45,4 +46,12 @@ public class MemberController {
         memberService.deleteMemberById(memberId);
         return ResponseEntity.noContent().build();
     }
+
+    @Operation(summary = "모든 멤버 조회 API", description = "등록된 모든 멤버를 조회합니다.")
+    @ApiResponse(responseCode = "200", description = "모든 멤버 조회 성공", content = @Content(schema = @Schema(implementation = MemberFindDto[].class)))
+    @GetMapping("/all")
+    public ResponseEntity<List<MemberFindDto>> findAllMembers() {
+        return ResponseEntity.ok(memberService.findAllMembers());
+    }
+
 }
