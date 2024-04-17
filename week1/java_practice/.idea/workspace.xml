@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="537e8333-c787-4608-bb13-421cb630cdab" name="Changes" comment="" />
+    <list default="true" id="537e8333-c787-4608-bb13-421cb630cdab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules/sopt.practice.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/week2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/http_api/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +85,7 @@
       <workItem from="1712149990076" duration="6000" />
       <workItem from="1712153926969" duration="115000" />
       <workItem from="1712154113104" duration="7000" />
+      <workItem from="1713330099735" duration="40000" />
     </task>
     <servers />
   </component>
