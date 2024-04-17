@@ -31,7 +31,7 @@ public class ItemService {
                 .price(itemDTO.price())
                 .tradeType(itemDTO.tradeType())
                 .isPriceNegotiable(itemDTO.isPriceNegotiable())
-                .preferredTradingLocation(itemDTO.preferredTradingLocation())
+                .preferredTradingLocation(itemDTO.tradingLocation())
                 .seller(seller)
                 .build();
         return itemRepository.save(item);

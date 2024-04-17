@@ -1,6 +1,7 @@
 package org.sopt.ofcoursemarket.dto;
 
 import org.sopt.ofcoursemarket.domain.TradeType;
+import org.sopt.ofcoursemarket.domain.TradingLocation;
 
 public record ItemDTO(
         String title,
@@ -8,6 +9,6 @@ public record ItemDTO(
         Integer price,
         TradeType tradeType,
         Boolean isPriceNegotiable,
-        String preferredTradingLocation,
+        TradingLocation tradingLocation,
         Long sellerId
 ) {}
