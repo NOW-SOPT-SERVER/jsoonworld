@@ -29,7 +29,7 @@ public class ApiApplication {
 			memberRepository.save(new Member("양대한", Part.ANDROID, 27));
 
 			// 모든 멤버 정보 조회
-			String url = "http://localhost:8080/api/v1/member/all";
+			String url = "http://localhost:8080/api/v1/members/all";
 			String response = restTemplate.getForObject(url, String.class);
 			System.out.println("Response from API: " + response);
 		};
