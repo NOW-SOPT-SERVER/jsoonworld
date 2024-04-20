@@ -1,13 +1,13 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:8080/soptseminar
+    url: jdbc:postgresql://localhost:5432/soptseminar
     username: jayson
     password: dpvmzlffk1
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         #        show_sql: true
