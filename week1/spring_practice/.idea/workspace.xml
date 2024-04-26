@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d74da359-7153-4569-bb9e-1dcbbbffcf1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../week2/http_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/http_api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules/sopt.practice.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/week2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/http_api/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +37,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="practice" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -40,17 +60,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/spring_practice",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jayson&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/spring_practice&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -90,6 +110,8 @@
       <workItem from="1712150100077" duration="233000" />
       <workItem from="1712151087307" duration="8000" />
       <workItem from="1713158864524" duration="29000" />
+      <workItem from="1713330050597" duration="19000" />
+      <workItem from="1713330155391" duration="48000" />
     </task>
     <servers />
   </component>

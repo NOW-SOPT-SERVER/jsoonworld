@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d5af52-e020-46fe-b291-72bea64a5db0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_3_24,_10_28 PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ofcoursemarket/src/test/java/org/sopt/ofcoursemarket/controller/ItemControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_practice/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_practice/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/modules/sopt.practice.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/.idea/week2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week2/http_api/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,32 +79,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainV2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainV3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainV4.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.bankingsystem [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jayson&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/bankingsystem/src/main/java/org/sopt/version4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MainV2.executor": "Run",
+    "Application.MainV3.executor": "Run",
+    "Application.MainV4.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.bankingsystem [:Main.main()].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "jayson",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/harperkwon/Desktop/github/sopt_34/jsoonworld/week1/bankingsystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/sopt/version4" />
@@ -186,6 +204,7 @@
       <workItem from="1712329672447" duration="901000" />
       <workItem from="1712543741585" duration="9587000" />
       <workItem from="1713052576383" duration="1461000" />
+      <workItem from="1713330192816" duration="11000" />
     </task>
     <servers />
   </component>
