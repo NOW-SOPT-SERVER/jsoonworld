@@ -1,7 +1,7 @@
 package org.sopt.cloud.common;
 
-import org.sopt.database.common.dto.ErrorResponse;
-import org.sopt.database.exception.NotFoundException;
+import org.sopt.cloud.common.dto.ErrorResponse;
+import org.sopt.cloud.exception.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

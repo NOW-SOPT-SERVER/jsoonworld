@@ -1,7 +1,7 @@
 package org.sopt.cloud.service.service.dto;
 
 
-import org.sopt.database.domain.Part;
+import org.sopt.cloud.domain.Part;
 
 public record MemberCreateDto(
         String name,

@@ -1,8 +1,8 @@
 package org.sopt.cloud.service.service.dto;
 
 
-import org.sopt.database.domain.Member;
-import org.sopt.database.domain.Part;
+import org.sopt.cloud.domain.Member;
+import org.sopt.cloud.domain.Part;
 
 public record MemberFindDto(
         String name,
