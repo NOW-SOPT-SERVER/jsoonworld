@@ -27,6 +27,4 @@ public class PostController {
                         postService.create(memberId, blogId, postCreateRequest))
                 .body(SuccessStatusResponse.of(SuccessMessage.POST_CREATE_SUCCESS));
     }
-
-
 }
