@@ -30,8 +30,8 @@ public class PostController {
     }
 
     @GetMapping("/posts/{postId}")
-    public ResponseEntity<SuccessStatusResponse<PostFindDto>> findPost(@PathVariable Long postId) {
-        return ResponseEntity.status(HttpStatus.OK).body(SuccessStatusResponse.of(
+        public ResponseEntity<SuccessStatusResponse<PostFindDto>> findPost(@PathVariable Long postId) {
+            return ResponseEntity.status(HttpStatus.OK).body(SuccessStatusResponse.of(
                 SuccessMessage.POST_FIND_SUCCESS,
                 postService.findPostById(postId)));
     }
