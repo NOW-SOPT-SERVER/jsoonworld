@@ -16,6 +16,6 @@
 
 ### GET API
 - [ ] 🔍 블로그 글을 조회하는 GET API 구현
-- [ ] 📄 개별 글 조회 기능 구현
+- [x] 📄 개별 글 조회 기능 구현
 - [ ] 📖 모든 글을 조회하는 기능 구현
 - [ ] ✉️ SuccessStatusResponse와 ErrorResponse를 활용(변형)하여 데이터를 반환하는 로직 구현
