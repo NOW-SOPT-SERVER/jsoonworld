@@ -1,5 +1,6 @@
 package org.sopt.practice.repository;
 
+import org.sopt.practice.common.dto.ErrorMessage;
 import org.sopt.practice.domain.Post;
 import org.sopt.practice.exception.NotFoundException;
 import org.springframework.data.jpa.repository.JpaRepository;
