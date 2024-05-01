@@ -2,11 +2,11 @@ package org.sopt.cloud.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.sopt.database.common.dto.SuccessMessage;
-import org.sopt.database.common.dto.SuccessStatusResponse;
-import org.sopt.database.controller.dto.BlogTitleUpdateRequest;
-import org.sopt.database.service.service.BlogService;
-import org.sopt.database.service.service.dto.BlogCreateRequest;
+import org.sopt.cloud.common.dto.SuccessMessage;
+import org.sopt.cloud.common.dto.SuccessStatusResponse;
+import org.sopt.cloud.service.service.BlogService;
+import org.sopt.cloud.service.service.dto.BlogCreateRequest;
+import org.sopt.cloud.service.service.dto.BlogTitleUpdateRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

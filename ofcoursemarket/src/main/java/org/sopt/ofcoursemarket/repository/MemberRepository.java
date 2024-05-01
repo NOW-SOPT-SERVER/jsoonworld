@@ -1,9 +1,7 @@
-package org.sopt.cloud.repository;
+package org.sopt.ofcoursemarket.repository;
 
-
-import org.sopt.cloud.domain.Member;
+import org.sopt.ofcoursemarket.domain.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
-
 }

@@ -2,12 +2,12 @@ package org.sopt.cloud.service.service;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.sopt.database.common.ErrorMessage;
-import org.sopt.database.domain.Member;
-import org.sopt.database.exception.NotFoundException;
-import org.sopt.database.repository.MemberRepository;
-import org.sopt.database.service.service.dto.MemberCreateDto;
-import org.sopt.database.service.service.dto.MemberFindDto;
+import org.sopt.cloud.common.ErrorMessage;
+import org.sopt.cloud.domain.Member;
+import org.sopt.cloud.exception.NotFoundException;
+import org.sopt.cloud.repository.MemberRepository;
+import org.sopt.cloud.service.service.dto.MemberCreateDto;
+import org.sopt.cloud.service.service.dto.MemberFindDto;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

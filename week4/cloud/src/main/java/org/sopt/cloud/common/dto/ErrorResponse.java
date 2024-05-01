@@ -1,6 +1,7 @@
 package org.sopt.cloud.common.dto;
 
-import org.sopt.database.common.ErrorMessage;
+
+import org.sopt.cloud.common.ErrorMessage;
 
 public record ErrorResponse(
         int status,

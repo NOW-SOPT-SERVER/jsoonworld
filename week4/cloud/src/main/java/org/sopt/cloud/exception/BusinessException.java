@@ -1,6 +1,7 @@
 package org.sopt.cloud.exception;
 
-import org.sopt.database.common.ErrorMessage;
+
+import org.sopt.cloud.common.ErrorMessage;
 
 public class BusinessException extends RuntimeException {
 

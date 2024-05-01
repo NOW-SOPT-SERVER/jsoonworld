@@ -3,7 +3,7 @@ package org.sopt.cloud.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.sopt.database.service.service.dto.BlogCreateRequest;
+import org.sopt.cloud.service.service.dto.BlogCreateRequest;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 

@@ -2,9 +2,9 @@ package org.sopt.cloud.controller;
 
 
 import lombok.RequiredArgsConstructor;
-import org.sopt.database.service.service.MemberService;
-import org.sopt.database.service.service.dto.MemberCreateDto;
-import org.sopt.database.service.service.dto.MemberFindDto;
+import org.sopt.cloud.service.service.MemberService;
+import org.sopt.cloud.service.service.dto.MemberCreateDto;
+import org.sopt.cloud.service.service.dto.MemberFindDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
