@@ -12,6 +12,8 @@ import org.sopt.practice.service.service.dto.PostCreateRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PostService {
@@ -41,4 +43,9 @@ public class PostService {
             throw new ForbiddenException(ErrorMessage.FORBIDDEN_MEMBER_ACCESS);
         }
     }
+    @Transactional(readOnly = true)
+    public PostFindDto findPostById(Long postId) {
+        return PostFindDto.of(postRepository.findByIdOrThrow(postId));
+    }
+
 }
