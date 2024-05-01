@@ -5,7 +5,11 @@ public record SuccessStatusResponse<T>(
         String message,
         T data
 ) {
+    public static SuccessStatusResponse<Void> of(SuccessMessage successMessage) {
+        return new SuccessStatusResponse<Void>(successMessage.getStatus(),successMessage.getMessage(), null);
+    }
+
     public static <T> SuccessStatusResponse<T> of(SuccessMessage successMessage, T data) {
-        return new SuccessStatusResponse<>(successMessage.getStatus(), successMessage.getMessage(), data);
+        return new SuccessStatusResponse<T>(successMessage.getStatus(),successMessage.getMessage(),data);
     }
 }
