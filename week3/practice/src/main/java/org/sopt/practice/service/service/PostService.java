@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.sopt.practice.common.dto.ErrorMessage;
 import org.sopt.practice.domain.Blog;
 import org.sopt.practice.domain.Post;
+import org.sopt.practice.exception.ForbiddenException;
 import org.sopt.practice.exception.NotFoundException;
 import org.sopt.practice.repository.BlogRepository;
 import org.sopt.practice.repository.PostRepository;
