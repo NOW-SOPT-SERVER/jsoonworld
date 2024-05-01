@@ -1,4 +1,4 @@
-package org.sopt.practice.common;
+package org.sopt.practice.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

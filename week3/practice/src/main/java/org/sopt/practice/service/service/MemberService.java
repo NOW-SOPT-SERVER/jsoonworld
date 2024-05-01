@@ -2,7 +2,7 @@ package org.sopt.practice.service.service;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.sopt.practice.common.ErrorMessage;
+import org.sopt.practice.common.dto.ErrorMessage;
 import org.sopt.practice.domain.Member;
 import org.sopt.practice.exception.NotFoundException;
 import org.sopt.practice.repository.MemberRepository;

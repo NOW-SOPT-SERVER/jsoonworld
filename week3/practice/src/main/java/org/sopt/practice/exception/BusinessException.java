@@ -1,7 +1,7 @@
 package org.sopt.practice.exception;
 
 
-import org.sopt.practice.common.ErrorMessage;
+import org.sopt.practice.common.dto.ErrorMessage;
 
 public class BusinessException extends RuntimeException {
 

@@ -1,5 +1,6 @@
 package org.sopt.practice.common;
 
+import org.sopt.practice.common.dto.ErrorMessage;
 import org.sopt.practice.common.dto.ErrorResponse;
 import org.sopt.practice.exception.NotFoundException;
 import org.springframework.http.HttpStatus;
