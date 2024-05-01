@@ -9,6 +9,8 @@ import org.sopt.practice.exception.NotFoundException;
 import org.sopt.practice.repository.BlogRepository;
 import org.sopt.practice.repository.PostRepository;
 import org.sopt.practice.service.service.dto.PostCreateRequest;
+import org.sopt.practice.service.service.dto.PostFindAllDto;
+import org.sopt.practice.service.service.dto.PostFindDto;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
