@@ -48,4 +48,8 @@ public class PostService {
         return PostFindDto.of(postRepository.findByIdOrThrow(postId));
     }
 
+    @Transactional(readOnly = true)
+    public List<PostFindAllDto> findAllPosts() {
+        return PostFindAllDto.listOf(postRepository.findAll());
+    }
 }
