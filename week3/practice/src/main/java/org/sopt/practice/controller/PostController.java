@@ -6,6 +6,7 @@ import org.sopt.practice.common.dto.SuccessMessage;
 import org.sopt.practice.common.dto.SuccessStatusResponse;
 import org.sopt.practice.service.service.PostService;
 import org.sopt.practice.service.service.dto.PostCreateRequest;
+import org.sopt.practice.service.service.dto.PostFindDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,5 +27,12 @@ public class PostController {
                         "Location",
                         postService.create(memberId, blogId, postCreateRequest))
                 .body(SuccessStatusResponse.of(SuccessMessage.POST_CREATE_SUCCESS));
+    }
+
+    @GetMapping("/posts/{postId}")
+    public ResponseEntity<SuccessStatusResponse<PostFindDto>> findPost(@PathVariable Long postId) {
+        return ResponseEntity.status(HttpStatus.OK).body(SuccessStatusResponse.of(
+                SuccessMessage.POST_FIND_SUCCESS,
+                postService.findPostById(postId)));
     }
 }
