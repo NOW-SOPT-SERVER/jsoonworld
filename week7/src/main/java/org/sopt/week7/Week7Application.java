@@ -1,15 +1,13 @@
-package org.sopt.cloud;
+package org.sopt.week7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.awt.*;
-
 @SpringBootApplication
-public class CloudApplication {
+public class Week7Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CloudApplication.class, args);
+		SpringApplication.run(Week7Application.class, args);
 	}
 
 }
