@@ -1,10 +1,10 @@
-package org.sopt.week7;
+package org.sopt.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Week7ApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
