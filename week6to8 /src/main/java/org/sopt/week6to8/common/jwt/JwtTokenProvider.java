@@ -17,13 +17,20 @@ import java.util.Date;
 public class JwtTokenProvider {
 
     private static final String USER_ID = "userId";
-    private static final Long ACCESS_TOKEN_EXPIRATION_TIME = 24 * 60 * 60 * 1000L * 14;
+    private static final String BEARER_PREFIX = "Bearer ";
+
+    private static final Long ACCESS_TOKEN_EXPIRATION_TIME = 24 * 60 * 60 * 1000L * 7;
+    private static final Long REFRESH_TOKEN_EXPIRATION_TIME = 24 * 60 * 60 * 1000L * 14;
 
     @Value("${jwt.secret}")
     private String JWT_SECRET;
 
     public String issueAccessToken(final Authentication authentication) {
         return generateToken(authentication, ACCESS_TOKEN_EXPIRATION_TIME);
+    }
+
+    public String issueRefreshToken() {
+        return generateRefreshToken(REFRESH_TOKEN_EXPIRATION_TIME);
     }
 
     public String generateToken(Authentication authentication, Long tokenExpirationTime) {
@@ -36,6 +43,18 @@ public class JwtTokenProvider {
 
         return Jwts.builder()
                 .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
+                .setClaims(claims)
+                .signWith(getSigningKey())
+                .compact();
+    }
+
+    public String generateRefreshToken(Long tokenExpirationTime) {
+        final Date now = new Date();
+        final Claims claims = Jwts.claims()
+                .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime() + tokenExpirationTime));
+
+        return BEARER_PREFIX + Jwts.builder()
                 .setClaims(claims)
                 .signWith(getSigningKey())
                 .compact();
